@@ -6,3 +6,4 @@ Helps you push all local folder to your Github repos
 2.For each folder execute above snippet
 3.Replace USERNAME and PASSWORD for GITHUB in snippet
 4.Enjoy !
+
