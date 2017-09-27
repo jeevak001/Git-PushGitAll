@@ -1,0 +1,14 @@
+
+#List FOLDERS to create repo
+#For each NAME_OF_FOLDER use below snippet
+
+name=NAME_OF_FOLDER
+cd `echo $name`
+git init
+git add .
+git commit -m "ok"
+curl -u 'USERNAME:PASSWORD' https://api.github.com/user/repos -d "{\"name\":\"$name\"}"
+git remote add origin https://github.com/USERNAME/`echo $name`.git
+git push -u origin master
+cd ..
+
